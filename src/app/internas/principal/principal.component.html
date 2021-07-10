@@ -1,0 +1,93 @@
+<div>
+    <mat-toolbar class="header-principal">
+        <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+
+        <div mat-card-avatar class="img-company"></div>
+
+        <div class="div-search">
+            <mat-form-field class="space-search" appearance="outline">
+                <mat-icon matPrefix>search</mat-icon>
+                <input class="buscar" matInput placeholder="Buscar correo">
+            </mat-form-field>
+        </div>
+
+        <mat-icon class="iconos-header">help_outline</mat-icon>
+
+        <mat-icon class="iconos-header">settings</mat-icon>
+
+        <mat-icon class="iconos-header">apps</mat-icon>
+
+        <div class="avatar-right">
+            <igx-avatar initials="JS" [roundShape]="true" size="down">
+            </igx-avatar>
+        </div>
+    </mat-toolbar>
+</div>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
+        <div class="space-btnredactar">
+            <button mat-raised-button color="warn">Redactar</button>
+        </div>
+        <mat-list>
+            <mat-list-item class="items">
+                <mat-icon class="icemails">inbox</mat-icon> Recibidos
+            </mat-list-item>
+            <mat-list-item class="items">
+                <mat-icon class="icemails">star</mat-icon> Destacados
+            </mat-list-item>
+            <mat-list-item class="items">
+                <mat-icon class="icemails">watch_later</mat-icon> Pospuestos
+            </mat-list-item>
+            <mat-list-item class="items">
+                <mat-icon class="icemails">label_important</mat-icon> Importantes
+            </mat-list-item>
+            <mat-list-item class="items">
+                <mat-icon class="icemails">send</mat-icon> Enviados
+            </mat-list-item>
+            <mat-list-item class="items">
+                <mat-icon class="icemails"> insert_drive_file</mat-icon> Borradores
+            </mat-list-item>
+            <mat-list-item class="items">
+                <mat-icon class="icemails">label</mat-icon> Categorías
+            </mat-list-item>
+        </mat-list>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <ng-container *ngComponentOutlet="component"></ng-container>
+        <!-- <div class="opciones">
+            <mat-icon class="iconosdos">check_box_outline_blank</mat-icon> <mat-icon>arrow_drop_down</mat-icon>
+            <mat-icon class="iconosdos">refresh</mat-icon>
+            <mat-icon class="iconosdos">more_vert</mat-icon>
+            <mat-icon class="iconosflechas">keyboard_arrow_right</mat-icon>
+            <mat-icon class="iconosflechas">keyboard_arrow_left</mat-icon>
+    
+           <mat-tab-group class="opcionestabs">
+                <mat-tab class="optabs" label="Principal">  
+                  <ng-template mat-tab-label>
+                    <mat-icon class="tab-icon">move_to_inbox</mat-icon>
+                    Principal
+                  </ng-template>  
+                </mat-tab>
+                <mat-tab class="optabs" label="Social">
+                  <ng-template mat-tab-label>
+                    <mat-icon class="tab-icon">group</mat-icon>
+                    Social
+                  </ng-template>  
+                </mat-tab>
+                <mat-tab class="optabs" label="Promociones"> 
+                  <ng-template mat-tab-label>
+                    <mat-icon class="tab-icon">local_offer</mat-icon>
+                    {{promocionesVariable}} 
+                  </ng-template>
+                </mat-tab>
+            </mat-tab-group>
+        </div> -->
+        <app-vista-mensaje></app-vista-mensaje>
+    </div>
+    <!--<bkacground>{{fondoimagen1}}</bkacground>   
+    <p>{{text1vistamensaje}}</p>-->
+</mat-drawer-container>
+
+<!--<p style="color: #ccc;">{{saludo}}</p>-->

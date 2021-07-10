@@ -1,0 +1,35 @@
+.opciones
+  {
+      height: 48px;
+      border-bottom: 1px solid #f5f5f5;
+      width: 100%;
+  }
+
+  .iconosdos, .iconosflechas
+  {
+      margin-left: 1%;
+      margin-top: 1%;
+  }
+  .iconosflechas
+  {
+      float: right;
+  }
+
+  .opcionestabs
+  {
+      background-color: #ffffff;
+      width: 100%;
+      border-top: 1px solid #f5f5f5;
+      min-width: 5%;
+      max-width:100%;
+  }
+
+  .tab-icon {
+    margin-right: 8px;
+  }
+
+:host ::ng-deep .mat-tab-label{
+    min-width: 220px;
+}
+
+ 
