@@ -14,12 +14,25 @@
     width: 100%;
 }
 
-.primeraimg
+.imagen1 
+{
+    background-image: url(../../../assets/img1.png);
+    background-size: contain;
+}
+
+.imagen2 
+{
+    content: url(../../../assets/img2.png);
+    background-size: contain;
+}
+
+.primeraimg 
 {
     width: 97%;
     height: 300px;
     margin: auto;
     background-size: contain;
+    background-image: url(../../../assets/img3.png);
 }
 
 .igx-avatar {
