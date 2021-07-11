@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BandejaComponent } from '../bandeja/bandeja.component';
 import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
@@ -8,16 +9,19 @@ import { TabsComponent } from '../tabs/tabs.component';
 })
 export class PrincipalComponent implements OnInit {
 
-  saludo = "";
   component: any;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.saludo = "el ogrito de mi novio no me quiere";
     this.component = TabsComponent;
 
-    
+
+
+  }
+
+  abrirRecibidos() {
+    this.component = TabsComponent;
   }
 
 }
