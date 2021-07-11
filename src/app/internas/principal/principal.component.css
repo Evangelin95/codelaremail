@@ -1,6 +1,6 @@
 .igx-avatar {
     background: #e41c77;
-    color: #000000;
+    color: #ffffff;
 }
 
 
@@ -82,4 +82,21 @@ ng-container{
     width: 100%;
 }
 
+.items:hover {
+    background-color: #f5f5f5 !important;
+    border-radius: 0px 20px 20px 0px !important;
+    cursor: pointer !important;
+}
+
+.mat-raised-button {
+    padding: 0 57px;
+}
+
+.iconos-hover:hover, .iconos-header:hover
+{
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    
+}
+ 
 

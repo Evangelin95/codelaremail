@@ -1,0 +1,69 @@
+.contenedorlanding
+{
+    width: 80%;
+    margin: auto;
+}
+
+.contenedorlanding div, button, mat-grid-list
+{
+    margin-top: 40px;
+}
+
+.landingemail
+{
+    width: 100%;
+}
+
+.primeraimg
+{
+    width: 97%;
+    height: 300px;
+    margin: auto;
+}
+
+.igx-avatar {
+    background: #e41c77;
+    color: #ffffff;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.encabezadoemail
+{
+    width: 100%;
+}
+
+.asunto
+{
+    font-size: 1.5rem;
+    margin-top: 1rem !important;
+}
+.asuntoemail
+{
+    padding-left: 2.75rem;
+}
+.icono-asunto
+{
+    color: #f4b404;
+    vertical-align: middle;
+}
+.label-email
+{
+    background-color: #f5f5f5;
+    font-size: smaller !important;
+    border-radius: 5px;
+}
+
+
+mat-grid-tile div
+{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+mat-grid-tile div p
+{
+    font-size: 14px !important;
+    line-height: 1.2;
+}

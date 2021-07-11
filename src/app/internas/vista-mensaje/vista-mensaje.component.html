@@ -1,1 +1,55 @@
-<p>vista-mensaje works!</p>
+<!--<mat-toolbar class="asuntoemail">
+    <h3 class="asunto">Fwd:  Prueba de email </h3>
+    <mat-icon class="icono-asunto">label_important</mat-icon><small class="label-email">Recibidos</small>
+    <mat-icon>unfold_less</mat-icon>
+    <mat-icon> local_printshop</mat-icon>
+    <mat-icon>open_in_new</mat-icon>
+</mat-toolbar>
+
+<div class="encabezadoemail">
+    <div class="avataremail">
+        <igx-avatar initials="JS" [roundShape]="true" size="small">
+        </igx-avatar>
+    </div>
+
+    <div class="datosremitente">
+        <p>Viviana Bernal C</p><br>
+        <small>avbc95@gmail.com</small>
+    </div>
+</div>-->
+<mat-card class="contenedorlanding">
+    <mat-card-title>Refuerzo de las vacunas</mat-card-title>
+    
+    <div class="primeraimg">
+        <img mat-card-image src="../../../assets/img3.jpg" >
+    </div>
+    <button mat-raised-button color="warn">Más información</button>
+    <mat-grid-list class="landingemail" cols="2" rowHeight="300px">
+        <mat-grid-tile>
+            <img mat-card-image src="../../../assets/img1.jpg" >
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div>
+            <mat-card-title>Refuerzo de las vacunas</mat-card-title>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, iusto. <br><br>
+               Possimus harum inventore molestias, ut illum, ratione distinctio necessitatibus reiciendis repellendus eius laboriosam. <br><br>
+               Ea fuga rerum unde temporibus ipsam blanditiis.
+            </p>
+               <button mat-raised-button style="background-color:#f4b404;">Ver más</button>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div>
+                <mat-card-title>Refuerzo de las vacunas</mat-card-title>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, iusto. <br><br>
+                   Possimus harum inventore molestias, ut illum, ratione distinctio necessitatibus reiciendis repellendus eius laboriosam. <br><br>
+                   Ea fuga rerum unde temporibus ipsam blanditiis.
+                </p>
+                   <button mat-raised-button style="background-color:#f4b404;">Ver más</button>
+                </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <img mat-card-image src="../../../assets/img2.jpg" >
+        </mat-grid-tile>
+    </mat-grid-list>
+</mat-card>
