@@ -7,14 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaMensajeComponent implements OnInit {
 
-
+  background = 'img3';
+  bkUrl = {};    
   constructor() { }
 
   ngOnInit(): void {
+    this.bkUrl = this.getBkUrl();
   }
 
-  getUrl(){
-    return "url('../../../assets/img3.png')";
+  getBkUrl() {
+    const styles = {
+      'background-image': 'url(../../../assets/' + this.background + '.png)'
+    };
+    console.log(styles);
+    return styles;
   }
 
 }
