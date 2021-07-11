@@ -19,7 +19,7 @@
     width: 97%;
     height: 300px;
     margin: auto;
-    background-image: url(../../../assets/img3.png);
+    background-size: contain;
 }
 
 .igx-avatar {

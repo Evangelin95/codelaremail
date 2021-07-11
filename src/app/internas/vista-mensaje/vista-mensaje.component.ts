@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaMensajeComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getUrl(){
+    return "url('../../../assets/img3.png')";
   }
 
 }
