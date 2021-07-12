@@ -65,6 +65,13 @@
     height: 38px !important;
 }
 
+.items:active
+{
+    background-color: rosybrown !important  ;
+    border-radius: 0px 20px 20px 0px !important;
+    cursor: pointer !important;
+}
+
 .icemails
 {
     margin-right: 17%;
