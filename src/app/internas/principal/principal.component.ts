@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BandejaComponent } from '../bandeja/bandeja.component';
 import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
@@ -10,13 +9,12 @@ import { TabsComponent } from '../tabs/tabs.component';
 export class PrincipalComponent implements OnInit {
 
   component: any;
-
-  constructor() { }
+    
+    constructor() {
+   }
 
   ngOnInit(): void {
     this.component = TabsComponent;
-
-
 
   }
 

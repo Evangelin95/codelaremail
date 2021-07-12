@@ -35,37 +35,74 @@
     background-image: url(../../../assets/img3.png);
 }
 
-.igx-avatar {
-    background: #e41c77;
-    color: #ffffff;
-    margin-left: 1%;
-    margin-top: 1%;
-}
-
 .encabezadoemail
 {
     width: 100%;
+    background-color: #ffffff;
+    height: 34px;
+    margin-bottom: 2%;
 }
 
 .asunto
 {
-    font-size: 1.5rem;
-    margin-top: 1rem !important;
+    font-size: 1.375rem;;
+    margin-top: 1.75rem !important;
+    font-weight: 400;
 }
 .asuntoemail
 {
     padding-left: 2.75rem;
+    background-color: #ffffff;
 }
 .icono-asunto
 {
     color: #f4b404;
-    vertical-align: middle;
+    margin-left: 1%;
 }
+
+.avataremail {
+    width: 5%;
+    padding-top: 1%;
+}
+
+.encabezadoemail p {
+   line-height: 1.2;
+}
+
+.iconos-remitentes {
+    width: 20%;
+    margin-left: 53%;
+}
+
+.icono-remitente
+{
+    margin-right: 5%;
+    color: gray;
+}
+
 .label-email
 {
-    background-color: #f5f5f5;
-    font-size: smaller !important;
-    border-radius: 5px;
+    background-color: #ccc;
+    font-size: .75rem;
+    padding: 0px 6px;
+    border-radius: 7px;
+    color: gray;
+    margin-left: 0.3%;
+}
+
+.avatar-email {
+    font-size: 2.75rem;
+    color: gray;
+}
+
+.iconos-email {
+    margin-left: 62%;
+    color: gray;
+}
+
+.icono-email
+{
+    margin-right: 10%;
 }
 
 

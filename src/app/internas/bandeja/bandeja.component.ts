@@ -3,9 +3,11 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { MatTableDataSource } from '@angular/material/table';
 import { PrincipalComponent } from '../principal/principal.component';
 import { VistaMensajeComponent } from '../vista-mensaje/vista-mensaje.component';
+import { Correo } from 'src/app/referencias/correo';
+import { CORREOSJSON } from 'src/app/referencias/estructura';
 
 
-export interface PeriodicElement {
+/*export interface PeriodicElement {
   name: string;
   position: number;
   weight: number;
@@ -23,7 +25,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
   { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
   { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-];
+];*/
 
 @Component({
   selector: 'app-bandeja',
@@ -33,8 +35,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class BandejaComponent implements OnInit {
 
   displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol'];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
-  selection = new SelectionModel<PeriodicElement>(true, []);
+  dataSource = new MatTableDataSource<Correo>(CORREOSJSON);
+  selection = new SelectionModel<Correo>(true, []);
 
   constructor(private principalComponent: PrincipalComponent) { }
 
@@ -56,14 +58,6 @@ export class BandejaComponent implements OnInit {
     }
 
     this.selection.select(...this.dataSource.data);
-  }
-
-  /** The label for the checkbox on the passed row */
-  checkboxLabel(row?: PeriodicElement): string {
-    if (!row) {
-      return `${this.isAllSelected() ? 'deselect' : 'select'} all`;
-    }
-    return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
   }
 
   abrirMensaje() {
