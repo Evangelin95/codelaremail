@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataContainer } from '../data-container';
 import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
@@ -9,17 +10,17 @@ import { TabsComponent } from '../tabs/tabs.component';
 export class PrincipalComponent implements OnInit {
 
   component: any;
-    
-    constructor() {
-   }
+
+  constructor(public data: DataContainer) {
+  }
 
   ngOnInit(): void {
-    this.component = TabsComponent;
+    this.data.component = TabsComponent;
 
   }
 
   abrirRecibidos() {
-    this.component = TabsComponent;
+    this.data.component = TabsComponent;
   }
 
 }

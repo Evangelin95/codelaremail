@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Correo } from 'src/app/referencias/correo';
+import { DataContainer } from '../data-container';
 
 @Component({
   selector: 'app-vista-mensaje',
@@ -7,20 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaMensajeComponent implements OnInit {
 
-  background = 'img3';
-  bkUrl = {};    
-  constructor() { }
+  public mensaje: Correo | any;
+  constructor(private data: DataContainer) { }
 
   ngOnInit(): void {
-    this.bkUrl = this.getBkUrl();
+    this.mensaje = this.data.mensajeSelccionado;
   }
 
-  getBkUrl() {
-    const styles = {
-      'background-image': 'url(../../../assets/' + this.background + '.png)'
-    };
-    console.log(styles);
-    return styles;
+  obtenerFormatoNombre(correo: string) {
+    correo = correo.substring(0, correo.indexOf("@"));
+    return correo;
   }
 
 }

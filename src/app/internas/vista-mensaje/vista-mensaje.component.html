@@ -1,6 +1,6 @@
 <mat-card class="fondomensaje">
     <mat-toolbar class="asuntoemail">
-        <h2 class="asunto">Fwd:  Prueba de email </h2>
+        <h2 class="asunto">{{"Fwd: "+mensaje.asunto}}</h2>
         <mat-icon class="icono-asunto">label_important</mat-icon><small class="label-email">Recibidos</small>
     
         <div class="iconos-email">
@@ -15,13 +15,13 @@
             <mat-icon class="avatar-email">account_circle</mat-icon>
         </div>
     
-        <p>Viviana Bernal C<br>
-        <small>para mi</small></p>
+        <p style="font-weight: bold;">{{obtenerFormatoNombre(mensaje.correoremitente)| uppercase }}<br>
+        <small style="font-weight: normal;">para mi</small></p>
     
-        <small style="font-size:12px; margin-left: 1%; color:gray">avbc95@gmail.com</small>
+        <small style="font-size: 14px;margin-left: 1%;color: gray;transform: translateY(-6px);">{{mensaje.correoremitente}}</small>
     
         <div class="iconos-remitentes">
-        <small style="font-size:12px; margin-right: 2%; color:gray">1 julio de 2021 16:11</small>
+        <small style="font-size:12px; margin-right: 2%; color:rgb(110, 110, 110)">{{mensaje.fecha+" de 2021"+mensaje.hora}}</small>
         <mat-icon class="icono-remitente">star_border</mat-icon>
     
         <mat-icon class="icono-remitente">reply</mat-icon>
